@@ -1,0 +1,209 @@
+$date
+	Sat Oct  3 10:40:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb $end
+$var wire 32 ! result [31:0] $end
+$var wire 1 " PWRITE $end
+$var wire 32 # PWDATA [31:0] $end
+$var wire 1 $ PSEL $end
+$var wire 1 % PREADY $end
+$var wire 32 & PRDATA [31:0] $end
+$var wire 1 ' PENABLE $end
+$var wire 32 ( PADDR [31:0] $end
+$var reg 1 ) PCLK $end
+$var reg 1 * PRESETn $end
+$var reg 32 + addr_in [31:0] $end
+$var reg 32 , data_in [31:0] $end
+$var reg 1 - transfer_req $end
+$var reg 1 . write_in $end
+$scope module master $end
+$var wire 1 ) PCLK $end
+$var wire 1 * PRESETn $end
+$var wire 1 $ PSEL $end
+$var wire 32 / PWDATA [31:0] $end
+$var wire 32 0 addr_in [31:0] $end
+$var wire 32 1 data_in [31:0] $end
+$var wire 1 - transfer_req $end
+$var wire 1 . write_in $end
+$var wire 1 " PWRITE $end
+$var wire 1 % PREADY $end
+$var wire 32 2 PRDATA [31:0] $end
+$var wire 1 ' PENABLE $end
+$var wire 32 3 PADDR [31:0] $end
+$var parameter 2 4 ACCESS $end
+$var parameter 2 5 IDLE $end
+$var parameter 2 6 SETUP $end
+$var reg 32 7 addr_reg [31:0] $end
+$var reg 2 8 current_state [1:0] $end
+$var reg 32 9 data_reg [31:0] $end
+$var reg 2 : next_state [1:0] $end
+$var reg 32 ; result [31:0] $end
+$var reg 1 " write_reg $end
+$upscope $end
+$scope module slave $end
+$var wire 32 < PADDR [31:0] $end
+$var wire 1 ) PCLK $end
+$var wire 1 ' PENABLE $end
+$var wire 1 % PREADY $end
+$var wire 1 * PRESETn $end
+$var wire 1 $ PSEL $end
+$var wire 32 = PWDATA [31:0] $end
+$var wire 1 " PWRITE $end
+$var wire 32 > PRDATA [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 6
+b0 5
+b10 4
+$end
+#0
+$dumpvars
+bx >
+bx =
+bx <
+bx ;
+b0 :
+bx 9
+bx 8
+bx 7
+bx 3
+bx 2
+b0 1
+b0 0
+bx /
+0.
+0-
+b0 ,
+b0 +
+0*
+0)
+bx (
+x'
+bx &
+x%
+x$
+bx #
+x"
+bx !
+$end
+#5000
+b0 &
+b0 2
+b0 >
+0$
+0%
+b0 !
+b0 ;
+0"
+b0 #
+b0 /
+b0 =
+b0 9
+b0 (
+b0 3
+b0 7
+b0 <
+0'
+b0 8
+1)
+#10000
+0)
+#15000
+1)
+#20000
+1.
+b100000000 ,
+b100000000 1
+b101 +
+b101 0
+0)
+1*
+#25000
+b1 :
+1-
+1)
+#30000
+0)
+#35000
+b10 :
+1$
+0-
+1"
+b100000000 #
+b100000000 /
+b100000000 =
+b100000000 9
+b101 (
+b101 3
+b101 7
+b101 <
+b1 8
+1)
+#40000
+0)
+#45000
+b0 :
+1%
+1'
+b10 8
+1)
+#50000
+0)
+#55000
+0$
+0%
+b1 :
+0'
+b0 8
+1-
+0.
+b0 ,
+b0 1
+1)
+#60000
+0)
+#65000
+b10 :
+1$
+0-
+0"
+b0 #
+b0 /
+b0 =
+b0 9
+b1 8
+1)
+#70000
+0)
+#75000
+b100000000 &
+b100000000 2
+b100000000 >
+b0 :
+1%
+1'
+b10 8
+1)
+#80000
+0)
+#85000
+b0 &
+b0 2
+b0 >
+0$
+0%
+b100000000 !
+b100000000 ;
+0'
+b0 8
+1)
+#86000
